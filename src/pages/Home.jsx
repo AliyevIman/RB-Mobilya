@@ -274,7 +274,7 @@ const Home = () => {
 
       {/* Hero banner 2  */}
 
-      <div className="section-4 d-flex justify-content-center align-items-center">
+      <div className="section-4 d-flex justify-content-center align-items-center"  style={{backgroundImage: "url('/image/kanpaniyalBackground.png')"}}>
         <div className="section4-content text-center">
           <h1 className="text-white display-5">
             Yeni Kampaniyalar Artıq Əlçatandır
@@ -335,7 +335,7 @@ const Home = () => {
         </Container>
       </section>
       {/* About section  */}
-      <div className="about-section d-flex justify-content-center align-items-center">
+      <div className="about-section d-flex justify-content-center align-items-center" style={{backgroundImage: "url('/image/about-section.png')"}}>
         <div className="about-content text-center">
           <h2 className="text-white">Haqqımızda Daha Ətraflı</h2>
           <p className="text-white">
