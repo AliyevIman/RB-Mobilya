@@ -235,13 +235,16 @@
   display: flex;
   justify-content: center;
   gap: 10px; /* Add space between the circles */
-  margin-top: 10px;
+  height: 20px !important;
 }
 .color-circle {
   width: 20px;
   height: 20px;
+  flex-shrink: 0;
+  min-width:20px;
+  min-height:20px;
   border-radius: 50%;
-   display: inline-block;
+   display: flex;
   border: 2px white solid; /* Default no border */
   cursor: pointer;
    -webkit-transform: none;
