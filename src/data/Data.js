@@ -298,7 +298,7 @@ export const products = [
         defaultColorImage:'/image/linka.jpg'
       },      
     ],
-    defaultImage: "/image/lincoln.jpg",
+    defaultImage: "/image/Lincoln.jpg",
     description:
       "Neytral tonlu yumşaq məxməri üzlük, hər məkanda uyumlu görünüş təmin edərkən, geniş və rahat oturacaq dizaynı sayəsində uzun müddətli oturuşlar üçün idealdır. ",
     quantity: 10, // The available quantity in stock
@@ -397,7 +397,7 @@ export const products = [
     longDescription:
        "Sadə, zərif və funksional olan bu oturacaq, müxtəlif məkanlarda həm estetik, həm də rahatlıq təmin edir. X şəklində arxa dəstək dizaynı, möhkəm metal konstruksiya və yumşaq oturacaq hissəsi ilə ideal seçimdir.",
     images: [
-      "/image/Baharb.jpg",
+      "/image/baharb.jpg",
     ],    
     colors: [
       {
@@ -430,7 +430,7 @@ export const products = [
       },
       
     ],
-    defaultImage: "/image/Baharb1.jpg",
+    defaultImage: "/image/baharb1.jpg",
     description:
       "Yemək otağı masaları ilə uyğun gəlir. Restoran və kafelərdə müasir və klassik atmosfer yaradır. Geniş qonaq otaqlarında əlavə oturacaq kimi istifadə edilə bilər.",
     quantity: 10, // The available quantity in stock

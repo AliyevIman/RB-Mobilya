@@ -27,7 +27,6 @@ const Product = ({ product }) => {
       <div className="colors">
         {product.colors.map((color,index) => (
           <button
-          
           className={`color-circle ${index === selectedColor ? 'active' : ''}`}
             key={color.name}
             style={{ backgroundColor: color.code }}

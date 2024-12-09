@@ -1,7 +1,7 @@
 /* header */
 .form-control:focus {
   outline: none; /* Remove the default focus outline */
-  box-shadow: none; /* Remove the default focus box-shadow (if any) */
+  box-shadow: none !important; /* Remove the default focus box-shadow (if any) */
 }
 
 .form-control:focus-visible {

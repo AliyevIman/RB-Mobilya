@@ -271,7 +271,7 @@ const Home = () => {
 
       {/* Hero banner 2  */}
 
-      <div className="section-4 d-flex justify-content-center align-items-center" style={{backgroundImage: "url('/image/kanpaniyalBackground.png')"}}>
+      <div style={{backgroundImage: "url('/image/Xalcalar.png')"}}className="section-4 d-flex justify-content-center align-items-center">
         <div className="section4-content text-center">
           <h1 className="text-white display-5">
             Yeni Kampaniyalar Artıq Əlçatandır

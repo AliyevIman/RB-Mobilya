@@ -228,7 +228,8 @@ const Header = ({ onSearch }) => {
                   maxWidth: "600px",
                   borderRadius: "50px",
                   overflow: "hidden",
-                  outlineStyle:'hidden'
+                  outlineStyle:'none',
+                  boxShadow: "none !important"
                 }}
               >
                 <Form.Control
@@ -239,13 +240,13 @@ const Header = ({ onSearch }) => {
                   onFocus={handleInputFocus} // Show suggestions on focus
                   onBlur={handleInputBlur} // Hide suggestions after clicking outside
                   className="border-0"
-                  style={{ backgroundColor: "#f5f5f5", outline: "none" }}
+                  style={{ backgroundColor: "#f5f5f5", outline: "none"}}
                 />
                 <Button
                   type="submit"
                   variant="outline-secondary"
                   className="border-0"
-                  style={{ backgroundColor: "#f5f5f5" }}
+                  style={{ backgroundColor: "#f5f5f5",outline:'none' }}
                 >
                   <SearchIcon />
                 </Button>
@@ -281,7 +282,7 @@ const Header = ({ onSearch }) => {
               onClick={toggleMenu}
               style={{ background: "none", border: "none", fontSize: "24px" }}
             >
-              {isMenuOpen ? <CloseIcon /> : <MenuIcon />}
+              {isMenuOpen ? <CloseIcon style={{color:'black'}}  /> : <MenuIcon style={{color:'black'}}  />}
             </button>
           </Col>
 
