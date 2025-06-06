@@ -6,6 +6,7 @@ import "./Home.css";
 import MySlider from "../components/slider/MySlider";
 import { Link } from "react-router-dom";
 import { categories, products } from "../data/Data";
+
 // import { Swiper, SwiperSlide } from "swiper/react";
 // import "swiper/swiper-bundle.css";
 // import SwiperCore from "swiper";
@@ -47,22 +48,40 @@ import { categories, products } from "../data/Data";
 
 const testimonials = [
   {
-    name: "Araz M.",
+    name: " Müştəri rəyi",
     feedback:
-      "Bu Scandinavian yan stolu çox funksionaldır. Kiçik, lakin geniş saxlama yerinə malikdir. Dizaynı isə minimalistdir və evimdəki bütün əşyalarla uyğun gəlir.",
-    image: "/image/comment1.png", // Replace with actual image paths
+      "Bu masa və stul dəstini seçəndə bir az tərəddüd edirdim, amma evimə yerləşdirəndən sonra hər şey mükəmməl oldu. Həm görünüşü çox şıkdır, həm də oturacaqlar çox rahatdır. Dizayn, keyfiyyət və rahatlıq bir araya gəlib. Qonaqlarım da çox bəyənir! Sizin sayənizdə evimdə tam istədiyim atmosferi yaratdım. Çox sağ olun!",
+    image: "/image/Mu84.jpg", // Replace with actual image paths
   },
   {
-    name: "Nigar Ə.",
+    name: "Müştəri rəyi",
     feedback:
-      "Bu mid-century modern kafe masasını çox funksionaldır və dizaynı ilə göz oxşayır. Qonaq otağımda həm praktik, həm də dekorativ məqsədlə istifadə edirəm.",
-    image: "/image/comment2.png",
+      "Bu yataq bizim yataq otağımıza mükəmməl uyğunlaşdı. Dizaynı sadə, lakin çox zövqlüdür. LED işıqlandırması çox rahatlıq qatır və gecələr sakit bir atmosfer yaradır. Çox razı qaldıq!😊",
+    image: "/image/Mu1.jpg",
   },
   {
-    name: "Yusif F.",
+    name: " Müştəri rəyi",
     feedback:
-      "Aldığım Chesterfield divanı çox rahatdır və oturma otağımı zərif vurğu naxışına çevirdi. Dəri materialı çox keyfiyyətlidir və işlənməsi mükəmməldir.",
-    image: "/image/comment3.png",
+      " Masa və stul dəstini mətbəximdə yerləşdirəndən sonra baxdım ki, tam istədiyim kimi olub. Həm çox rahatdır, həm də əla uyğunlaşıb. Hər dəfə baxanda yaxşı ki, bunu seçmişəm deyirəm. Çox sağ olun! 🙏😊 ",
+    image: "/image/Mu35riv.jpg",
+  },
+  {
+    name: " Müştəri rəyi",
+    feedback:
+      "Bu masa və oturacaqlar dəsti tam olaraq gözləntilərimizi qarşıladı! Rahat oturacaqları və müasir dizaynı ilə həm gündəlik, həm də qonaqlıq üçün idealdır. Taxta detalları və mərmər səth çox zövqlü bir görünüş yaradır. Evimizə çox gözəllik qatdı!",
+    image: "/image/Mu17.jpg", // Replace with actual image paths
+  },
+  {
+    name: " Müştəri rəyi",
+    feedback:
+      "Mətbəximiz üçün seçdiyimiz bu masa dəsti həqiqətən möhtəşəmdir! Mərmər üslublu səthi həm zərif, həm də təmizlənməsi çox rahatdır. Oturacaqların dizaynı və rahatlığı isə uzun saatlar yemək masası ətrafında vaxt keçirmək üçün idealdır. Ümumi mətbəx interyerinə çox yaxşı uyğunlaşdı. Çox razıyıq!",
+    image: "/image/Mu80.jpg", // Replace with actual image paths
+  },
+  {
+    name: " Müştəri rəyi",
+    feedback:
+      "Bu gözəl masa və stul dəstəsinə görə sizə təşəkkür edirəm! Həm keyfiyyəti, həm də görünüşü çox gözəldir. Evimizə tam uyğun gəldi və hər kəs çox bəyəndi. Çox razı qaldıq, sizə uğurlar arzulayıram!",
+    image: "/image/Mubb.jpg", // Replace with actual image paths
   },
 ];
 
@@ -271,13 +290,20 @@ const Home = () => {
 
       {/* Hero banner 2  */}
 
-      <div className="section-4 d-flex justify-content-center align-items-center" style={{backgroundImage: "url('/image/kanpaniyalBackground.png')"}}>
+      <div className="section-4 d-flex justify-content-center align-items-center" 
+      style={{backgroundImage: "url('/image/File.jpg')",
+    backgroundSize: "cover", // şəkil div-i tam dolduracaq
+    backgroundPosition: "center", // şəkli ortalayacaq
+    backgroundRepeat: "no-repeat", // şəkil təkrarlanmayacaq
+    height: "800px", // BURADA ölçünü təyin edirsən
+    width: "100%" // bu da div-in eni üçün
+      }}>
         <div className="section4-content text-center">
           <h1 className="text-white display-5">
             Yeni Kampaniyalar Artıq Əlçatandır
           </h1>
           <p className="text-white lead">
-          Evinizi ifadə etmək üçün hər növ mebellər.
+          Bağınız üçün hər növ mebellər.
           </p>
           <Link to="/products" style={{ color: "inherit" }}>
             <Button
@@ -331,7 +357,13 @@ const Home = () => {
         </Container>
       </section>
       {/* About section  */}
-      <div className="about-section d-flex justify-content-center align-items-center" style={{backgroundImage: "url('/image/about-section.png')"}}>
+      <div className="about-section d-flex justify-content-center align-items-center" style={{backgroundImage: "url('/image/jurnalbc.jpg')",
+        backgroundSize: "cover", // şəkil div-i tam dolduracaq
+        backgroundPosition: "center", // şəkli ortalayacaq
+        backgroundRepeat: "no-repeat", // şəkil təkrarlanmayacaq
+        height: "800px", // BURADA ölçünü təyin edirsən
+        width: "100%" // bu da div-in eni üçün
+      }}>
         <div className="about-content text-center">
           <h2 className="text-white">Haqqımızda Daha Ətraflı</h2>
           <p className="text-white">
@@ -359,11 +391,27 @@ const Home = () => {
         <Container>
           <Row className="text-center mb-4">
             <Col>
-              <h2 className="display-6">Müştəri Məmnuniyyəti</h2>
+            <h2 className="display-6" style={{ color: "red" }}>
+  Geri Qaytarma Şərtləri
+</h2>
               <p className="lead">
-              "Bizim üçün ən vacib olan müştərilərimizin məmnuniyyətidir. 
-              Onların evlərinə əlavə etdiyimiz hər bir toxunuş, onların rahatlığı və zövqü üçün hazırlanır."
-              </p>
+"Bizim üçün ən vacib olan müştərilərimizin məmnuniyyətidir. Bu səbəbdən məhsulun geri qaytarılması və dəyişdirilməsi qaydaları ilə sizi yaxından tanış etmək istəyirik."</p> 
+              <p style={{ color: "orange" }}>1. Ümumi Şərtlər:</p>
+Müştəri aldığı məhsulu 14 gün ərzində geri qaytara bilər.<br/>
+Məhsul istifadə olunmamış, zədələnməmiş və orijinal qablaşdırmada olmalıdır.<br/>
+Geri qaytarma üçün qəbz və ya faktura təqdim edilməlidir. <br/>
+
+<p style={{ color: "orange" }}>2. Geri Qaytarma Prosesi</p>
+1: Müştəri geri qaytarma üçün rəsmi WhatsApp nömrəsi ilə əlaqə saxlamalıdır.<br/>
+2: Məhsulun vəziyyəti qiymətləndirilir və geri qaytarma təsdiqləndikdən sonra daşınma prosesi həyata keçirilir.<br/>
+3: Geri qaytarma xərcləri əgər məhsulda istehsal qüsuru yoxdursa, müştərinin öhdəsinə düşür.<br/>
+4: Ödəniş 5-7 iş günü ərzində müştərinin bank hesabına qaytarılır və ya nağd şəkildə ödənilir.<br/>
+
+<p style={{ color: "red" }}>3. Aşağıdakı hallarda məhsul geri qaytarılmır:</p>
+            1: Xüsusi sifarişlə (ölçü, rəng, material seçimi ilə) hazırlanmış mebellər.<br/>
+2: Quraşdırılmış və ya istifadəyə verilmiş mebellər.<br/>
+3: Zədələnmiş, ləkələnmiş və ya hər hansı şəkildə dəyişdirilmiş məhsullar.<br/>
+4: Evinizə uyğunsuzluğunu qeyd etdiyiniz təqdirdə.
             </Col>
           </Row>
 

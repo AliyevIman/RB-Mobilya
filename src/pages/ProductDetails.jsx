@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import "./SingleProduct.css";
 import { Button, Form, Badge, Row, Col } from "react-bootstrap";
@@ -8,7 +9,8 @@ import { useNavigate } from "react-router-dom";
 const ProductDetails = ({ product, selectedColor }) => {
   const [currentColor, setCurrentColor] = useState(
     selectedColor || product.colors[0]
-  );
+  )
+  ;
 
   const navigate = useNavigate();
 
@@ -28,7 +30,7 @@ const ProductDetails = ({ product, selectedColor }) => {
       Şəkil: ${product.defaultImage} 
     `;
     const encodedMessage = encodeURIComponent(message); // URL-də düzgün şəkildə göstərilməsi üçün mesajı kodlayırıq
-    const phoneNumber = "+48 573 441 958"; // Telefon nömrənizi bura əlavə edin
+    const phoneNumber = "+994 55 210 96 50"; // Telefon nömrənizi bura əlavə edin
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
 
     window.open(whatsappUrl, "_blank"); // WhatsApp linkini yeni tabda açır
@@ -125,7 +127,7 @@ const ProductDetails = ({ product, selectedColor }) => {
       {/* Add to cart and wishlist buttons */}
       <div className="mt-3 " style={{ display: "flex" }}>
         <Button variant="success" className="me-2" onClick={sendToWhatsApp}>
-          Whatsapp-a keçid edin
+          İndi sifariş et!
         </Button>
         {/* <div className="quantity-control">
         <Button onClick={() => handleQuantityChange('decrease')}>-</Button>

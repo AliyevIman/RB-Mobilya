@@ -16,6 +16,14 @@ const Header = ({ onSearch }) => {
   const [filteredSuggestions, setFilteredSuggestions] = useState([]); // Store filtered suggestions
   const [isFocused, setIsFocused] = useState(false);
   const menuRef = useRef(null); // Reference to the mobile menu
+  const [hoveredItem, setHoveredItem] = useState(null);
+  const handleMouseEnter = (item) => {
+    setHoveredItem(item);
+  };
+  
+  const handleMouseLeave = () => {
+    setHoveredItem(null);
+  };
   
   // Load suggestions on mount
   useEffect(() => {
@@ -144,10 +152,10 @@ const Header = ({ onSearch }) => {
           <Col md={2} sm={2} xs={2}>
             <a href="#" className="navbar-brand">
               <Link to="/">
-                <img
-                  src="/image/logo.png"
+              <img
+                  src="/image/Lider logo.png"
                   alt="Logo"
-                  style={{ height: "40px" }}
+                  style={{ height: "200px" }}
                 />
               </Link>
             </a>
@@ -167,48 +175,57 @@ const Header = ({ onSearch }) => {
             >
               <div
               onClick={handleNavigate}
+              onMouseEnter={() => handleMouseEnter("xususi")}
+                onMouseLeave={handleMouseLeave}
                 style={{
                   height: 16,
                   cursor:'pointer',
                   textAlign: "center",
-                  color: "#7F7F7F",
+                  color: hoveredItem === "xususi"  ? "#FF5733" : "#7F7F7F", // Hover zamanı rəng dəyişir
                   fontSize: 14,
                   fontFamily: "Inter",
                   fontWeight: "400",
                   wordWrap: "break-word",
+                  transition: "color 0.3s ease", // Rəng dəyişiminin animasiyası
                 }}
               >
                 Xüsusi Təkliflər
               </div>
               <div
                 onClick={handleNavigate}
+                onMouseEnter={() => handleMouseEnter("mehsullar")}
+                onMouseLeave={handleMouseLeave}
                 style={{
                   width: 72,
                   cursor: "pointer",
                   height: 16,
                   textDecoration: "none",
                   textAlign: "center",
-                  color: "#7F7F7F",
+                  color: hoveredItem === "mehsullar" ? "#FF5733" : "#7F7F7F",
                   fontSize: 14,
                   fontFamily: "Inter",
                   fontWeight: "400",
                   wordWrap: "break-word",
+                  transition: "color 0.3s ease",
                 }}
               >
                 Məhsullar
               </div>
               <Link
                 to="/contact"
+                onMouseEnter={() => handleMouseEnter("elaqe")}
+                onMouseLeave={handleMouseLeave}
                 style={{
                   width: 43,
                   height: 16,
                   textDecoration: "none",
                   textAlign: "center",
-                  color: "#7F7F7F",
+                  color: hoveredItem === "elaqe" ? "#FF5733" : "#7F7F7F",
                   fontSize: 14,
                   fontFamily: "Inter",
                   fontWeight: "400",
                   wordWrap: "break-word",
+                  transition: "color 0.3s ease",
                 }}
               >
                 Əlaqə
@@ -216,7 +233,7 @@ const Header = ({ onSearch }) => {
             </div>
           </Col>
           {/* Search Bar Section */}
-          <Col md={9} lg={3} sm={9} xs={8}>
+          <Col md={9} lg={3} sm={3} xs={5}>
             <Form
               onSubmit={handleSearch}
               className="d-flex justify-content-center"

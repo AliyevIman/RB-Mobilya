@@ -7,19 +7,19 @@ const backgroundSlides = [
   {
     description1: "Seçiminiz Sizin Haqqınızda Çox Şey Deyir.",
     description2: "Evinizi ifadə etmək üçün 300-dən çox yol alın.",
-    backgroundImg: "/image/sliderimage1.png",
+    backgroundImg: "/image/bck13.jpg",
     buttonName: "İNDİ AL",
   },
   {
     description1: "Yeni Məhsullar Kəşf Edin",
     description2: "Evinizi bəzəmək üçün unikal seçimlər",
-    backgroundImg: "/image/sliderimage2.png",
+    backgroundImg: "/image/divan b2.jpg",
     buttonName: "İNDİ AL",
   },
   {
     description1: "İlham Verici Dekor",
     description2: "Dəblə uyğun gələn dekorasiya məhsulları",
-    backgroundImg: "/image/sliderimage3.png",
+    backgroundImg: "/image/bck12.jpg",
     buttonName: "İNDİ AL",
   },
   // Add more slides as necessary

@@ -7,10 +7,10 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const sendToWhatsApp = () => {
     const message = `
-      heyoooo
+      Salam, zəhmət olmasa 
     `;
     const encodedMessage = encodeURIComponent(message); // URL-də düzgün şəkildə göstərilməsi üçün mesajı kodlayırıq
-    const phoneNumber = "+994552109650"; // Telefon nömrənizi bura əlavə edin
+    const phoneNumber = "+994 55 210 96 50"; // Telefon nömrənizi bura əlavə edin
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
 
     window.open(whatsappUrl, "_blank"); // WhatsApp linkini yeni tabda açır
@@ -23,8 +23,8 @@ const Footer = () => {
             {/* Logo Section */}
             <Col xs={12} md={3} className="mb-4">
               <Link to="/">
-                <img
-                  src="/image/Footer-logo.png"
+              <img
+                  src="/image/Lider logo.png" 
                   alt="Logo"
                   className="footer-logo mb-3"
                 />{" "}
@@ -45,15 +45,6 @@ const Footer = () => {
                 <li>
                   <Link to="/">Vakansiyalar</Link>
                 </li>
-                <li>
-                  <Link to="/">Zəmanət</Link>
-                </li>
-                <li>
-                  <Link to="/">Missiya</Link>
-                </li>
-                <li>
-                  <Link to="/">Xəbərlər</Link>
-                </li>
               </ul>
             </Col>
 
@@ -62,22 +53,10 @@ const Footer = () => {
               <h5 className="text-warning">İnformasiyaya</h5>
               <ul className="list-unstyled">
                 <li>
-                  <Link to="/">İstifadəçi razılaşması</Link>
+                  <Link to="/">Kredit şərtləri</Link>
                 </li>
                 <li>
-                  <Link to="/">Konfidensiallıq</Link>
-                </li>
-                <li>
-                  <Link to="/">Kredit və geri qaytarma şərtləri</Link>
-                </li>
-                <li>
-                  <Link to="/">Oflayn alış qaydaları</Link>
-                </li>
-                <li>
-                  <Link to="/">FAQ</Link>
-                </li>
-                <li>
-                  <Link to="/">Bloq</Link>
+                  <Link to="/">Geri qaytarma şərtləri</Link>
                 </li>
               </ul>
             </Col>
